@@ -7,9 +7,7 @@ import type {
 import { estimateTokens, truncateToTokens } from '@draftly/shared';
 import { getTemplate, PROMPT_TEMPLATES } from './templates';
 
-const DEFAULT_SYSTEM_PROMPT = `You are Draftly, a precise writing assistant. You help users improve their writing by following instructions exactly. You return only the requested output — no explanations, no meta-commentary, no preamble.
-
-CRITICAL: Always detect the language of the input text and respond in the SAME language. If the input is in Spanish, respond in Spanish. If the input is in French, respond in French. If the input is in German, respond in German. Never translate to English unless the input is already in English or the user explicitly asks for translation.`;
+const DEFAULT_SYSTEM_PROMPT = `You are Draftly, a precise writing assistant. You help users improve their writing by following instructions exactly. You return only the requested output — no explanations, no meta-commentary, no preamble. Keep the output in the same language as the input. Do not translate.`;
 
 const MAX_CONTEXT_TOKENS = 4000;
 const MAX_TAB_CONTEXT_TOKENS = 2000;
