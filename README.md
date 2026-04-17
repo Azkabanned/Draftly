@@ -58,31 +58,29 @@ Adding a new provider means implementing this interface. See `packages/providers
 
 ## Quick Start
 
-### Prerequisites
+### Install from Release (no coding required)
 
-- Node.js 18+
-- pnpm 9+
+1. Download `draftly-v0.1.0.zip` from the [latest release](https://github.com/Azkabanned/Draftly/releases/latest)
+2. Unzip it
+3. Open Chrome and go to `chrome://extensions`
+4. Enable **Developer mode** (top right)
+5. Click **Load unpacked** and select the `dist` folder from the zip
+6. Click the Draftly icon in the toolbar to configure your AI provider
 
-### Setup
+### Build from Source
+
+If you want to build it yourself:
+
+**Prerequisites:** Node.js 18+, pnpm 9+
 
 ```bash
-# Install dependencies
+git clone https://github.com/Azkabanned/Draftly.git
+cd Draftly
 pnpm install
-
-# Build the Chrome extension
 pnpm build:ext
-
-# Or build everything
-pnpm build
 ```
 
-### Load the Extension
-
-1. Open Chrome and navigate to `chrome://extensions`
-2. Enable "Developer mode" (top right)
-3. Click "Load unpacked"
-4. Select the `apps/extension/dist` folder
-5. Click the Draftly icon in the toolbar to configure your API key
+Then load `apps/extension/dist` as an unpacked extension in Chrome.
 
 ### Ollama / Local Model Setup
 
