@@ -239,38 +239,19 @@ function DraftlyApp() {
     [],
   );
 
-  const showToast = useCallback((message: string) => {
-    const toast = document.createElement('div');
-    toast.textContent = message;
-    toast.style.cssText = `
-      position: fixed; z-index: 2147483647; pointer-events: none;
-      left: ${mousePos.current.x}px; top: ${mousePos.current.y - 50}px;
-      background: #1f2937; color: #4ade80; font-family: Inter, system-ui, sans-serif;
-      font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 6px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      animation: draftly-fade-in 150ms ease-out;
-    `;
-    const shadow = getOrCreateHost();
-    shadow.getElementById('draftly-root')?.appendChild(toast);
-    setTimeout(() => toast.remove(), 1500);
-  }, []);
-
   const handleReplace = useCallback((text: string) => {
     replaceSelection(text);
     handleDismiss();
-    showToast('Replaced');
-  }, [handleDismiss, showToast]);
+  }, [handleDismiss]);
 
   const handleInsertBelow = useCallback((text: string) => {
     insertBelowSelection(text);
     handleDismiss();
-    showToast('Inserted');
-  }, [handleDismiss, showToast]);
+  }, [handleDismiss]);
 
   const handleCopy = useCallback((text: string) => {
     navigator.clipboard.writeText(text);
-    showToast('Copied');
-  }, [showToast]);
+  }, []);
 
   return (
     <>
