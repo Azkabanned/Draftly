@@ -1,0 +1,43 @@
+{
+  "name": "draftly",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bring-your-own-LLM writing assistant — Chrome extension + companion app",
+  "scripts": {
+    "dev": "pnpm --filter @draftly/extension dev",
+    "build": "pnpm --filter @draftly/extension build && pnpm --filter @draftly/settings-web build",
+    "build:ext": "pnpm --filter @draftly/extension build",
+    "build:settings": "pnpm --filter @draftly/settings-web build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf packages/*/dist apps/*/dist node_modules/.cache"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "esbuild": "^0.21.5",
+    "postcss": "^8.4.39",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1",
+    "zustand": "^4.5.4"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
+}

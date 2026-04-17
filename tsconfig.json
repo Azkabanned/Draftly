@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "references": [
+    { "path": "packages/shared" },
+    { "path": "packages/providers" },
+    { "path": "packages/core" },
+    { "path": "packages/ui" },
+    { "path": "packages/word-integration" },
+    { "path": "apps/extension" },
+    { "path": "apps/settings-web" }
+  ]
+}

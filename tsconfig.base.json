@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "paths": {
+      "@draftly/shared": ["./packages/shared/src"],
+      "@draftly/shared/*": ["./packages/shared/src/*"],
+      "@draftly/providers": ["./packages/providers/src"],
+      "@draftly/providers/*": ["./packages/providers/src/*"],
+      "@draftly/core": ["./packages/core/src"],
+      "@draftly/core/*": ["./packages/core/src/*"],
+      "@draftly/ui": ["./packages/ui/src"],
+      "@draftly/ui/*": ["./packages/ui/src/*"],
+      "@draftly/word-integration": ["./packages/word-integration/src"],
+      "@draftly/word-integration/*": ["./packages/word-integration/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

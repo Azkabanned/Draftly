@@ -1,0 +1,58 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #111113;
+  color: #e4e4e7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::selection {
+  background: rgba(76, 110, 245, 0.3);
+}
+
+input::placeholder {
+  color: #52525b;
+}
+
+input:focus {
+  border-color: #4c6ef5 !important;
+  box-shadow: 0 0 0 3px rgba(76, 110, 245, 0.15) !important;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-content {
+  animation: fadeIn 200ms ease-out;
+}

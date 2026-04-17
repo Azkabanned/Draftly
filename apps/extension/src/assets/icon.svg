@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a7aff"/>
+      <stop offset="100%" stop-color="#3850c8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular background like AdBlock / Bitwarden -->
+  <circle cx="64" cy="64" r="64" fill="url(#bg)"/>
+
+  <!-- Bold "D" lettermark, centered -->
+  <path d="M40,34 L40,94 L58,94 C78,94 92,82 92,64 C92,46 78,34 58,34 Z M54,48 L58,48 C71,48 78,54 78,64 C78,74 71,80 58,80 L54,80 Z" fill="white"/>
+
+  <!-- AI sparkle accent -->
+  <path d="M88,26 C89,31 91.5,33.5 96.5,34.5 C91.5,35.5 89,38 88,43 C87,38 84.5,35.5 79.5,34.5 C84.5,33.5 87,31 88,26Z" fill="white" opacity="0.75"/>
+</svg>

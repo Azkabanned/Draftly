@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.cache/
+*.tsbuildinfo
+.env
+.env.local
+.DS_Store
+*.pem
+*.key
+coverage/
+.turbo/
