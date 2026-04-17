@@ -218,6 +218,10 @@ See `packages/word-integration/WORD_ADDIN_PLAN.md` for the technical plan. The c
 - **Build**: pnpm workspaces, esbuild, Vite
 - **Tests**: Vitest
 
+## Chrome Web Store
+
+Draftly is currently available as a manual install from [GitHub Releases](https://github.com/Azkabanned/Draftly/releases/latest). If there's enough interest, we'll publish it to the Chrome Web Store and other browser stores. Star the repo or open an issue if you'd like to see that happen.
+
 ## Contributing
 
 Issues and PRs welcome at [github.com/Azkabanned/Draftly](https://github.com/Azkabanned/Draftly/issues).
