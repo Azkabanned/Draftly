@@ -148,12 +148,20 @@ pnpm lint
 | `/sharpen` | Make tighter and more precise |
 | `/shorten` | Make more concise |
 | `/expand` | Add more detail |
-| `/professional` | Professional tone |
+| `/paraphrase` | Rephrase in different words, same meaning |
+| `/vocabulary` | Suggest stronger, more engaging word choices |
+| `/professional` | Professional, polished tone |
 | `/friendly` | Warm, conversational tone |
 | `/persuasive` | More compelling and convincing |
+| `/confident` | Assertive, no hedging language |
+| `/formal` | Formal register for official communication |
+| `/academic` | Scholarly tone for papers and research |
 | `/simplify` | Simpler words and shorter sentences |
+| `/tone` | Analyse how your writing comes across (doesn't rewrite) |
 | `/reply` | Generate a reply |
 | `/summarise` | Create a concise summary |
+| `/brainstorm` | Generate ideas and angles from your text |
+| `/draft` | Turn rough notes into polished prose |
 | `/custom` | Your own instruction |
 
 ## Supported Providers
@@ -168,14 +176,15 @@ pnpm lint
 
 ## Privacy & Security
 
-Draftly is designed to be transparent about what data it handles:
+Draftly has **no servers**. Your text goes directly from your browser to your AI provider (or stays on your machine with local models). Nothing passes through us.
 
-- **Local-only storage** — API keys and settings never leave your device
-- **No tracking** — Draftly has no analytics, no telemetry, no server
-- **PII redaction** — Optionally strip sensitive data before sending
-- **Sensitive site blocking** — Banking, auth, healthcare sites excluded from tab context
-- **Audit log** — See exactly what was sent and to which provider
-- **Consent-driven** — Tab context always requires explicit permission
+- **No servers, no tracking, no data collection** — there is no Draftly backend
+- **API keys stored locally** — never synced, never transmitted except to your provider
+- **PII redaction** — optionally strip emails, phone numbers, credit cards before sending
+- **Sensitive site blocking** — banking, auth, healthcare sites excluded from tab context
+- **Audit log** — see exactly what was sent and to which provider
+
+Full privacy policy: [PRIVACY.md](PRIVACY.md)
 
 ## Microsoft Word Support
 
@@ -189,19 +198,14 @@ See `packages/word-integration/WORD_ADDIN_PLAN.md` for the technical plan. The c
 
 ## Roadmap
 
-### Next Up
-- [ ] Inline grammar underlines
-- [ ] Local model support (Ollama, LM Studio, MLX)
-- [ ] Custom prompt editor in settings
+- [ ] Inline grammar underlines (real-time as you type)
 - [ ] Streaming responses in command box
+- [ ] Custom prompt editor in settings
 - [ ] Token cost tracking over time
-
-### Future
+- [ ] Plagiarism detection
 - [ ] Team prompt sharing
-- [ ] Cloud sync for settings
 - [ ] Native Office Word add-in
 - [ ] Safari and Edge extension ports
-- [ ] Mobile keyboard integration
 - [ ] Custom workflows / prompt chains
 - [ ] Bring-your-own-RAG knowledge base
 
@@ -213,6 +217,10 @@ See `packages/word-integration/WORD_ADDIN_PLAN.md` for the technical plan. The c
 - **Language**: TypeScript (strict)
 - **Build**: pnpm workspaces, esbuild, Vite
 - **Tests**: Vitest
+
+## Contributing
+
+Issues and PRs welcome at [github.com/Azkabanned/Draftly](https://github.com/Azkabanned/Draftly/issues).
 
 ## License
 
