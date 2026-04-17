@@ -9,6 +9,7 @@ Think Grammarly, but powered by Claude, GPT, Gemini, or any OpenAI-compatible mo
 - **Text rewriting** — fix grammar, sharpen, shorten, expand, change tone
 - **Command palette** — slash commands (`/fix`, `/rewrite`, `/sharpen`, etc.)
 - **Multiple providers** — Anthropic, OpenAI, Gemini, OpenRouter, custom endpoints
+- **Multi-language** — auto-detects the language of your text and responds in the same language
 - **Privacy-first** — API keys stored locally, PII redaction, audit log
 - **Tab context** — optionally use content from open tabs as AI context
 - **Works everywhere** — any text field, textarea, or contenteditable element
